@@ -1,6 +1,6 @@
 export const config = {
-  port: 6060,
-  host: "127.0.0.1",
+  port: Number(process.env.NODE_PORT) || 6060,
+  host: process.env.NODE_HOST || "0.0.0.0",
   env: process.env.NODE_ENV || "development",
 };
 
